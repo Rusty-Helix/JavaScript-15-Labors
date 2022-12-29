@@ -5,7 +5,7 @@ const getRandomNumber = () => Math.floor(Math.random() * Math.pow(16, 6))
 const getRandomHexString = () => getRandomNumber().toString(16)
 
 function getRandomRgbaString() {
-    randomHexString = getRandomHexString()
+    const randomHexString = getRandomHexString()
     const r = parseInt(randomHexString.substring(0, 2), 16).toString()
     const g = parseInt(randomHexString.substring(2, 4), 16).toString()
     const b = parseInt(randomHexString.substring(4, 6), 16).toString()
